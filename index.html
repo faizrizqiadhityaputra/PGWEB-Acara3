@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+<body>
+    <div class="container mt-3">
+        <div class="card">
+            <div class="card-header">
+                <h5><i class="fa-solid fa-calculator"></i>Itung-Itungan</h5>
+            </div>
+            <div class="card-body">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Angka Kapisan</label>
+                    <input type="number" class="form-control" id="angkakapisan" placeholder="piroyoo??">
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Angka Kapindo</label>
+                        <input type="number" class="form-control" id="angkakapindo" placeholder="piroyoo??">
+                    </div>
+
+                    <div class="row text-center">
+                        <div class="col">
+                            <button type="button" class="btn btn-primary" onclick="tambah()">
+                                <b>Tambah (+)</b>
+                            </button>
+                            <button type="button" class="btn btn-warning" onclick="Sudo()">
+                                <b>Sudo (-)</b>
+                            </button>
+                            <button type="button" class="btn btn-success" onclick="Ping()">
+                                <b>Ping (*)</b>
+                            </button>
+                            <button type="button" class="btn btn-danger" onclick="Poro()">
+                                <b>Poro (/)</b>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row text-center mt-5">
+                    <div class="col">
+                    <h2 id="hasil"></h2>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+    <div class="row text-center">
+        <div class="col">
+        <small class="text-primary">
+            Nama: Faiz Rizqi<br>
+            NIM: 24/541570/SV/24925<br>
+            Kelas: A
+            </small>
+    </div>
+
+</body>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+<script>
+    //Mengambil nilai dari input
+    var angka1 = document.getElementById("angkakapisan");
+    var angka2 = document.getElementById("angkakapindo");
+
+    //Fungsi untuk penjumlahan
+    function tambah() {
+        var hasil_tambah = parseFloat(angka1.value) + parseFloat(angka2.value);
+        console.log(hasil_tambah);
+
+        //Menampilkan hasil ke elemen dengan id "hasil"
+    document.getElementById('hasil').innerHTML = "Hasil: " + hasil_tambah;
+
+    }
+
+    //Fungsi untuk pengurangan
+    function Sudo() {
+        var hasil_Sudo = parseFloat(angka1.value) + parseFloat(angka2.value);
+        console.log(hasil_Sudo);
+
+         //Menampilkan hasil ke elemen dengan id "hasil"
+    document.getElementById('hasil').innerHTML = "Hasil: " + hasil_tambah;
+
+     //Menampilkan hasil ke elemen dengan id "hasil"
+    document.getElementById('hasil').innerHTML = "Hasil: " + hasil_tambah;
+    }
+
+    //Fungsi untuk perkalian
+    function Ping() {
+        var hasil_Ping = parseFloat(angka1.value) + parseFloat(angka2.value);
+        console.log(hasil_Ping);
+
+         //Menampilkan hasil ke elemen dengan id "hasil"
+    document.getElementById('hasil').innerHTML = "Hasil: " + hasil_tambah;
+    }
+
+    //Fungsi untuk poro
+    function Poro() {
+        var hasil_Poro = parseFloat(angka1.value) + parseFloat(angka2.value);
+        console.log(hasil_Poro);
+
+         //Menampilkan hasil ke elemen dengan id "hasil"
+    document.getElementById('hasil').innerHTML = "Hasil: " + hasil_tambah;
+
+
+    }
+
+</script>
+</body>
+
+</html>
