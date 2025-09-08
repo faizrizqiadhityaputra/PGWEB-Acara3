@@ -33,13 +33,13 @@
                             <button type="button" class="btn btn-primary" onclick="tambah()">
                                 <b>Tambah (+)</b>
                             </button>
-                            <button type="button" class="btn btn-warning" onclick="Sudo()">
+                            <button type="button" class="btn btn-warning" onclick="sudo()">
                                 <b>Sudo (-)</b>
                             </button>
-                            <button type="button" class="btn btn-success" onclick="Ping()">
+                            <button type="button" class="btn btn-success" onclick="ping()">
                                 <b>Ping (*)</b>
                             </button>
-                            <button type="button" class="btn btn-danger" onclick="Poro()">
+                            <button type="button" class="btn btn-danger" onclick="poro()">
                                 <b>Poro (/)</b>
                             </button>
                         </div>
@@ -85,33 +85,30 @@
     }
 
     //Fungsi untuk pengurangan
-    function Sudo() {
-        var hasil_Sudo = parseFloat(angka1.value) + parseFloat(angka2.value);
+    function sudo() {
+        var hasil_Sudo = parseFloat(angka1.value) - parseFloat(angka2.value);
         console.log(hasil_Sudo);
 
          //Menampilkan hasil ke elemen dengan id "hasil"
-    document.getElementById('hasil').innerHTML = "Hasil: " + hasil_tambah;
-
-     //Menampilkan hasil ke elemen dengan id "hasil"
-    document.getElementById('hasil').innerHTML = "Hasil: " + hasil_tambah;
+    document.getElementById('hasil').innerHTML = "Hasil: " + hasil_Sudo;
     }
 
     //Fungsi untuk perkalian
-    function Ping() {
-        var hasil_Ping = parseFloat(angka1.value) + parseFloat(angka2.value);
+    function ping() {
+        var hasil_Ping = parseFloat(angka1.value) * parseFloat(angka2.value);
         console.log(hasil_Ping);
 
          //Menampilkan hasil ke elemen dengan id "hasil"
-    document.getElementById('hasil').innerHTML = "Hasil: " + hasil_tambah;
+    document.getElementById('hasil').innerHTML = "Hasil: " + hasil_Ping;
     }
 
     //Fungsi untuk poro
-    function Poro() {
-        var hasil_Poro = parseFloat(angka1.value) + parseFloat(angka2.value);
+    function poro() {
+        var hasil_Poro = parseFloat(angka1.value) / parseFloat(angka2.value);
         console.log(hasil_Poro);
 
          //Menampilkan hasil ke elemen dengan id "hasil"
-    document.getElementById('hasil').innerHTML = "Hasil: " + hasil_tambah;
+    document.getElementById('hasil').innerHTML = "Hasil: " + hasil_Poro;
 
 
     }
